@@ -52,7 +52,7 @@ def action(changePin, action):
       message = "Turned " + deviceName + " on."
    if action == "off":
       GPIO.output(changePin, GPIO.HIGH)
-      time.sleep(100)
+      time.sleep(0.1)
       GPIO.output(changePin, GPIO.LOW)
       
       message = "Activated " + deviceName
